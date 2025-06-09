@@ -1,4 +1,4 @@
-# sql-practice-snippets
+
 # SQL Snippets – JOIN Examples
 
 This file contains essential SQL JOIN examples with comments in Portuguese for bilingual understanding.
