@@ -66,9 +66,4 @@ SELECT DATE_TRUNC('month', order_date) AS month,
        SUM(amount) OVER (ORDER BY DATE_TRUNC('month', order_date)) AS running_total
 FROM orders;
 
-🧠 ROW_NUMBER       vs       RANK        vs            DENSE_RANK
 
-Function	         Skips numbers on ties?	        Example
-ROW_NUMBER()	             ✅ Yes	                      1, 2, 3, 4... (unique row numbers)
-RANK()	                    ✅ Yes	                      1, 1, 3 (rank 2 skipped due to tie)
-DENSE_RANK()	             ❌ No	                      1, 1, 2 (continuous ranking with ties)
