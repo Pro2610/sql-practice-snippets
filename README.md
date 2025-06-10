@@ -41,6 +41,7 @@ This section contains essential SQL JOIN types with examples and bilingual comme
 - **FULL** = todos os dados de ambos os lados
 
 🪟 Window Functions
+
 Window functions allow you to perform calculations across a set of rows that are related to the current row — without grouping the data.
 
 📌 Key functions:
