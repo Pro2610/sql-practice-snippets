@@ -10,7 +10,7 @@ It’s designed for quick reference, daily practice, and interview prep.
 
 - [JOIN Examples](#join-examples)
 - [Window Functions](#window-functions)
-- [Coming Soon: CASE WHEN and COALESCE](#coming-soon-case-when-and-coalesce)
+
 
 ---
 
