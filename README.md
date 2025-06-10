@@ -28,3 +28,22 @@ Each query includes real-world logic for practicing JOINs in relational database
 - FULL = tudo de ambos os lados
 
 ---
+## 🪟 Window Functions
+
+Window functions allow you to perform calculations across a set of table rows that are somehow related to the current row — **without grouping** the data.
+
+📌 Key functions include:
+- `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`
+- `SUM() OVER`, `AVG() OVER`
+- `LAG()`, `LEAD()`
+- `PARTITION BY`, `ORDER BY` inside window frames
+
+---
+
+### 🔍 Examples
+
+```sql
+-- Number purchases per user in order
+SELECT user_id, purchase_date,
+       ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY purchase_date) AS purchase_rank
+FROM purchases;
