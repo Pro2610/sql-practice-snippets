@@ -67,4 +67,42 @@ SELECT DATE_TRUNC('month', order_date) AS month,
        SUM(amount) OVER (ORDER BY DATE_TRUNC('month', order_date)) AS running_total
 FROM orders;
 
+🧩 CASE WHEN and COALESCE
+These tools are essential for adding logic and handling nulls directly in your SQL queries.
 
+🔍 What is CASE WHEN?
+
+It works like an IF / ELSE structure, directly in SQL.
+
+SELECT user_id,
+       amount,
+       CASE 
+           WHEN amount >= 100 THEN 'High Value'
+           WHEN amount >= 50 THEN 'Medium Value'
+           ELSE 'Low Value'
+       END AS value_category
+FROM purchases;
+
+📌 Use cases:
+
+Labeling values
+
+Creating conditional columns
+
+Customizing outputs in reports
+
+🔄 What is COALESCE()?
+
+COALESCE() returns the firstnon-null value from a list of columns or expressions.
+
+SELECT user_id,
+       COALESCE(phone_number, email, 'No contact') AS contact_method
+FROM users;
+
+📌 Use cases:
+
+Handling missing data
+
+Setting default values
+
+Replacing NULLs in results
