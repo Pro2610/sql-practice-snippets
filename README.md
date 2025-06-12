@@ -106,3 +106,10 @@ Handling missing data
 Setting default values
 
 Replacing NULLs in results
+
+## 📊 GROUP BY and HAVING
+
+`GROUP BY` is used to group rows based on the value of one or more columns.  
+`HAVING` is used to filter **aggregated results** (unlike `WHERE`, which filters rows).
+
+---
