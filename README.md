@@ -113,3 +113,9 @@ Replacing NULLs in results
 `HAVING` is used to filter **aggregated results** (unlike `WHERE`, which filters rows).
 
 ---
+
+## 🔽 ORDER BY, LIMIT, OFFSET
+
+Use these to control sorting and pagination in your SQL queries.
+
+---
