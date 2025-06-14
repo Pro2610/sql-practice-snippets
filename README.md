@@ -119,3 +119,15 @@ Replacing NULLs in results
 Use these to control sorting and pagination in your SQL queries.
 
 ---
+
+## 🧮 ROLLUP, CUBE, GROUPING SETS
+
+These advanced grouping options allow you to create **subtotals**, **grand totals**, and **multi-dimensional aggregations** in a single query.
+
+---
+
+### 🔁 ROLLUP
+
+Adds hierarchical subtotals (e.g. per year → per country → grand total).
+
+
